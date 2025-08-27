@@ -3,7 +3,12 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());            // permite peticiones desde el front (Vite 5173)
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://TU-SITIO.netlify.app"
+  ]
+}));            // permite peticiones desde el front (Vite 5173)
 app.use(express.json());    // parsea JSON del body
 
 // "BD" en memoria

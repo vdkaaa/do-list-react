@@ -7,12 +7,6 @@ export async function getTareas() {
   return r.json();
 }
 
-
-export async function getTareas() {
-  const r = await fetch(`${BASE}/tareas`);
-  return r.json();
-}
-
 export async function crearTarea(texto) {
   const r = await fetch(`${BASE}/tareas`, {
     method: "POST",

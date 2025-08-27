@@ -74,10 +74,11 @@ const BASE = import.meta.env.VITE_API_BASE || "http://localhost:3000/api";
 ---------------------------------
 📸 Screenshots
 ---------------------------------
-(agrega aquí tus capturas o GIFs en carpeta docs/)
+<img width="1861" height="875" alt="image" src="https://github.com/user-attachments/assets/2575b1b9-f794-4c97-a591-335ddbc55598" />
+
 
 ---------------------------------
 📄 Licencia
 ---------------------------------
 Este proyecto se publica con fines de aprendizaje y portafolio.
-Puedes usarlo como base para tus propios proyectos 🚀.
+Puede usarse como base para otros proyectos 🚀.

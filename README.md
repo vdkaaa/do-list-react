@@ -1,12 +1,84 @@
-# React + Vite
+=============================
+📝 Do List React + Express
+=============================
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini aplicación Full Stack para gestionar tareas.
+Frontend hecho con React + Vite, backend con Express desplegado en Render, y frontend en Netlify.
 
-Currently, two official plugins are available:
+---------------------------------
+🚀 Demo en vivo
+---------------------------------
+Frontend (Netlify): https://do-list-react.netlify.app
+Backend (Render API): https://do-list-react.onrender.com/api/tareas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---------------------------------
+✨ Features
+---------------------------------
+- Agregar y eliminar tareas
+- Animaciones con Framer Motion
+- Contador de tareas visibles
+- Estados de carga, error y lista vacía
+- Diseño responsivo y centrado
+- Full Stack: Frontend en Netlify + Backend en Render
 
-## Expanding the ESLint configuration
+---------------------------------
+🛠️ Stack Tecnológico
+---------------------------------
+Frontend: React (Vite), CSS, Framer Motion
+Backend: Node.js, Express, CORS
+Hosting: Netlify (frontend), Render (backend)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---------------------------------
+📂 Estructura del repo
+---------------------------------
+/ (raíz)
+  server/        → backend Express
+    server.js
+    package.json
+  src/           → frontend React
+    App.jsx
+    do-list.jsx
+    api.js
+  public/
+  package.json   → frontend
+  vite.config.js
+
+---------------------------------
+⚙️ Cómo correr local
+---------------------------------
+# Clonar repo
+git clone https://github.com/vdkaaa/do-list-react.git
+cd do-list-react
+
+# Backend
+cd server
+npm install
+npm start   # http://localhost:3000
+
+# Frontend
+cd ..
+npm install
+npm run dev # http://localhost:5173
+
+---------------------------------
+🔑 Variables de entorno
+---------------------------------
+En el frontend (src/api.js) se usa la variable:
+
+VITE_API_BASE
+- Local: http://localhost:3000/api
+- Producción: https://do-list-react.onrender.com/api
+
+Ejemplo en src/api.js:
+const BASE = import.meta.env.VITE_API_BASE || "http://localhost:3000/api";
+
+---------------------------------
+📸 Screenshots
+---------------------------------
+(agrega aquí tus capturas o GIFs en carpeta docs/)
+
+---------------------------------
+📄 Licencia
+---------------------------------
+Este proyecto se publica con fines de aprendizaje y portafolio.
+Puedes usarlo como base para tus propios proyectos 🚀.
